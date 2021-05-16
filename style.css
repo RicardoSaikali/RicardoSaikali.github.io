@@ -1,0 +1,61 @@
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.center {
+    text-align: center;
+    background-color: rgb(212, 105, 17);
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.content {
+    display:inline-block;
+    text-align: left;  
+    padding-left:7%;
+    padding-right:7%;
+    padding-top:2%;
+    padding-bottom:2%;
+    background-color:rgba(193,158,118,255)
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(184, 181, 164, 0.95);
+    text-align: center;
+    
+}
+
+.question {
+    /* background-color: rgb(219, 219, 219); */
+    padding: 1px; 
+    font-size: 20px;
+}
+
+select {
+    font-size: 18px;
+}
+
+textarea {
+    font-size: 18px;
+}
+
+input {
+    font-size: 18px;
+}
+
+
+
+
+

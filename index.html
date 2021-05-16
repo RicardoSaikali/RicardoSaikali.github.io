@@ -1,10 +1,88 @@
 <!DOCTYPE html>
 <html>
-<title>HTML Tutorial</title>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>JUnit Questionaire</title>
+</head>
+
 <body>
+    <div class="center"> 
+        <div class="top">
+            <h1>UI Questionaire for JUnit's Website</h1>
+            <h2>See JUnit's website here:</h2>
+            <a href="https://junit.org/junit5/">
+                <img src="images/JUnitSite.png" alt="https://junit.org/junit5/" width="70%">
+            </a>
+        </div>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+        <br>
+        <br>
+            
+        <div class="content">
+                <form> 
+                    <h2>Please answer to the best of your abilities!</h2>
 
+                    <div class="question">
+                        First name: <input type="text" name="firstname"><br>
+                    </div><br>
+
+                    <div class="question">
+                        Last name: <input type="text" name="lastname"><br>
+                    </div><br>
+
+                    <div class="question">
+                        I am a:<br>
+                        <input type="radio" name="role" value="Student">Student<br>
+                        <input type="radio" name="role" value="Professor">Professor<br>
+                    </div>
+
+                    <h3>Please select what you think applies:</h2>
+                    <div class="question">
+                        The UI seems to:<br>
+                        <input type="checkbox" name="function" value="function ">function properly<br>
+                        <input type="checkbox" name="consistent" value="consistent">be consistent<br>
+                        <input type="checkbox" name="efficient" value="efficient">be efficient<br>
+                        <input type="checkbox" name="usability" value="usability">be easy to use<br>
+                        <input type="checkbox" name="reliable" value="reliable">be reliable<br>
+                        <input type="checkbox" name="secure" value="secure">be secure<br>
+                    </div><br>
+                    
+                    <div class="question">
+                        My favourite part of the website is:<br>
+                    <select name="favorite">
+                        <option value="Color">the color scheme</option>
+                        <option value="organized">the way it is organized</option>
+                        <option value="reliability">it's reliability</option>
+                        <option value="usability">how easy it is to use</option>
+                        <option value="consistency">how consistent it is</option>
+                        <option value="functionality">how well it functions</option>
+                        </select><br>
+                    </div><br>                   
+                    
+                    <div class="question">
+                        The thing I hated the most about the website is:<br> 
+                        <select name="disliked">
+                        <option value="Color">the color scheme</option>
+                        <option value="organized">the way it is organized</option>
+                        <option value="reliability">it's reliability</option>
+                        <option value="usability">how easy it is to use</option>
+                        <option value="consistency">how consistent it is</option>
+                        <option value="functionality">how well it functions</option>
+                        </select><br>
+                    </div><br>
+                    
+                    <div class="question">
+                        If you have any suggestions, please write them here:<br>
+                        <textarea rows="5" cols="45"></textarea><br>
+                    </div><br>
+
+                    <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Website designed by Ric</p>
+    </div>
 </body>
 </html>
