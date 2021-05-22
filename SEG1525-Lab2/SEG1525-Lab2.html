@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Rico Groceries</title>
+</head>
+<!-- to avoid pressing a "none"/no filter button we instantly load with none at first -->
+<!-- https://www.w3schools.com/jsref/event_onload.asp -->
+<body onload="populateListProductChoices('displayProduct')">
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<header>
+    <a id ="logolink" href="/lab2/index.html">
+        <img id ="logo" src="pictures\—Pngtree—letter r floral logo_5594562.PNG" />
+    </a>
+   
+    <!-- https://stackoverflow.com/questions/17003027/forcing-link-to-match-image-size-without-float-in-css -->
+   
+    <!-- image taken from: <a href='https://pngtree.com/so/floral'>floral png from pngtree.com</a> -->
+    <h1 id="websitetitle" >Rico's Groceries!</h1> 
+    <div style="clear: left;"></div>
+    <!-- aidea to clear left float from  https://stackoverflow.com/questions/13596821/css-align-images-and-text-on-same-line-->
+    <div class="tab">
+    <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+    <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+    <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+    </div>
+</header>
+
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Client Information</h3>
+  <p>Please tell us a bit about the foods you eat.</p>
+	Choose a Category: <br>
+
+	<!-- <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option type="checkbox" value=""></option>
+	<option type="checkbox" value="NutFree">Nut Free</option>
+    <option type="checkbox" value="LactoseFree" >Lactose Free</option>
+    <option type="checkbox" value="None" >None</option>
+	</select> -->
+    
+    <table id="dietSelect" name="dietSelect" onchange="populateListProductChoices('displayProduct')">
+        <tr>
+            <td><input id="NutFree" type="checkbox" value="nutFree"/><label for="chkNutFree">Nut Free</label></td>
+        </tr>
+        <tr>
+            <td><input id="LactoseFree" type="checkbox" value="lactoseFree"/><label for="chkLactoseFree">Lactose Free</label></td>
+        </tr>
+        <tr>
+            <td><input id="Organic" type="checkbox" value="organic"/><label for="chkOrganic">Organic</label></td>
+        </tr>
+    </table>
+    <br>
+
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We have hidden products based on your restrictions.</p>
+	 Choose items to buy:
+	 <div id="displayProduct"></div><br>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Make my cart!
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+<footer> 
+    <p>Website designed by Ricardo</p>
+</footer>
+</html>
