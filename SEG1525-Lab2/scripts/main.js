@@ -107,6 +107,6 @@ function selectedItems(){
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
-		
+	c.appendChild(document.createTextNode("Total Price is $" + Math.round(((getTotalPrice(chosenProducts)) + Number.EPSILON) * 100) / 100));
+	// https://stackoverflow.com/questions/11832914/how-to-round-to-at-most-2-decimal-places-if-necessary used to fix rounding issue
 }
