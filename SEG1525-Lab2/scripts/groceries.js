@@ -86,7 +86,6 @@ var products = [
 
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
-
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	if(restriction["none"]==true) {
@@ -110,7 +109,6 @@ function restrictListProducts(prods, restriction) {
 			}
 		}	
 	}
-
 	return product_names;
 }
 

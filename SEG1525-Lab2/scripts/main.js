@@ -4,7 +4,6 @@
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 
 function openInfo(evt, tabName) {
-
 	// Get all elements with class="tabcontent" and hide them
 	tabcontent = document.getElementsByClassName("tabcontent");
 	for (i = 0; i < tabcontent.length; i++) {
@@ -20,9 +19,7 @@ function openInfo(evt, tabName) {
 	// Show the current tab, and add an "active" class to the button that opened the tab
 	document.getElementById(tabName).style.display = "block";
 	evt.currentTarget.className += " active";
-
 }
-
 
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
@@ -32,7 +29,6 @@ function populateListProductChoices(name) {
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s.innerHTML = "";
-
 
 	// inspired by https://www.aspsnippets.com/Articles/Get-multiple-selected-checked-CheckBox-values-in-Array-using-JavaScript.aspx
 	var dietSelect = document.getElementById("dietSelect"); //get the table of checkboxes
@@ -86,10 +82,8 @@ function populateListProductChoices(name) {
 // We build a paragraph to contain the list of selected items, and the total price
 
 function selectedItems(){
-	
 	var ele = document.getElementsByName("product");
 	var chosenProducts = [];
-	
 	var c = document.getElementById('displayCart');
 	c.innerHTML = "";
 	
