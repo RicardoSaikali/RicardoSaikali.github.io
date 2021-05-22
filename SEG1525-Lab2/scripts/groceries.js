@@ -70,7 +70,7 @@ var products = [
 		name: "Steak (Organic!)- $15.00",
 		nutFree: true,
 		lactoseFree: true,
-		price: 20.00,
+		price: 15.00,
 		organic: true
 	},	
 	{
