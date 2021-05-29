@@ -10,6 +10,7 @@ var products = [
 		price: 1.00,
 		organic: true,
 		img: "images/orange.jpg"
+		// https://www.istockphoto.com/photo/orange-gm185284489-19875146
 	},
 	{
 		name: "Brocoli (Organic!) - $1.99",
@@ -18,6 +19,7 @@ var products = [
 		price: 1.99,
 		organic: true,
 		img: "images/brocoli.jpg"
+		// https://lamoisson.com/produit/brocoli-bio/
 	},
 	{
 		name: "Bread - $2.35",
@@ -26,6 +28,7 @@ var products = [
 		price: 2.35,
 		organic: false,
 		img: "images/bread.jpg"
+		// https://www.cookingclassy.com/homemade-bread/
 	},
 	{
 		name: "Yogurt (Organic!)- $4.00",
@@ -34,6 +37,7 @@ var products = [
 		price: 4.00,
 		organic: true,
 		img: "images/yogurt.jpg"
+		// https://www.cabotcheese.coop/greek-yogurt-substitutions/
 	},
 	{	
 		name: "Almond granola - $4.00",
@@ -42,6 +46,7 @@ var products = [
 		price: 4.00,
 		organic: false,
 		img: "images/almond.jpg"
+		// https://www.nourishedtheblog.com/honey-almond-granola/
 	},
 	{
 		name: "Eggs (Organic!)- $5.00",
@@ -50,6 +55,7 @@ var products = [
 		price: 5.00,
 		organic: true,
 		img: "images/eggs.jpg"
+		// https://www.heart.org/en/news/2018/08/15/are-eggs-good-for-you-or-not
 	},
 	{
 		name: "Carrots - $7.00",
@@ -58,6 +64,7 @@ var products = [
 		price: 7.00,
 		organic: false,
 		img: "images/carrots.jpg"
+		// https://thehealthybutcher.com/organic-carrots-2-lb.-bag.html
 	},
 	{
 		name: "Rice - $8.00",
@@ -66,6 +73,7 @@ var products = [
 		price: 8.00,
 		organic: false,
 		img: "images/rice.jpg"
+		// https://www.flickr.com/photos/ajay_suresh/49906485468
 	},
 	{
 		name: "Salmon (Organic!)- $10.00",
@@ -74,6 +82,7 @@ var products = [
 		price: 10.00,
 		organic: true,
 		img: "images/salmon.jpg"
+		// https://www.walmart.ca/en/ip/your-fresh-market-atlantic-salmon-fillets/6000191273561
 	},
 	{
 		name: "Steak (Organic!)- $16.00",
@@ -82,6 +91,7 @@ var products = [
 		price: 16.00,
 		organic: true,
 		img: "images/steak.jpg"
+		// https://www.mentalfloss.com/article/23246/should-you-really-put-steak-shiner
 	},	
 	{
 		name: "Cake - $25.00",
@@ -90,6 +100,7 @@ var products = [
 		price: 25.00,
 		organic: false,
 		img: "images/cake.jpg"
+		// https://handletheheat.com/best-birthday-cake/
 	},
 ];
 	
