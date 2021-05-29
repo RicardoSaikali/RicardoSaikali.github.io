@@ -9,7 +9,7 @@ var products = [
 		lactoseFree: true,
 		price: 1.00,
 		organic: true,
-		img: "images/orange.JPG"
+		img: "images/orange.jpg"
 	},
 	{
 		name: "Brocoli (Organic!) - $1.99",
