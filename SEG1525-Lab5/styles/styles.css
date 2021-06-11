@@ -170,3 +170,11 @@ h1{
 #finalbook:hover{
     background-color: #093f81;
 }
+
+.myhover2:hover{
+    background-color: #0d6efd;
+}
+
+#datetimepicker {
+    font-family: 'Mali', cursive;
+}

@@ -16,6 +16,12 @@ This will help you get started with your code!
     <title>Ricardo's Physiotherapy Clinic</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/myJS.js"></script>
+
+
+    <link href="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="node_modules/jquery-datetimepicker/jquery.datetimepicker.css"/>
+    <script src="node_modules/jquery-datetimepicker/jquery.js"></script>
+    <script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
     
 </head>
 
@@ -164,7 +170,7 @@ This will help you get started with your code!
     <div class="modal  fade" id="bookappointment" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-            <form>
+            <form id="bookform">
 
                 <div class="modal-header">
                     <h5 class="modal-title center" id="modalTitle">Modal title</h5>
@@ -182,12 +188,12 @@ This will help you get started with your code!
                     <div style="margin-bottom: 10px;" class="row">
                         <div class="form-group col">
                             <label for="firstName">First Name:</label>
-                            <input required type="firstName" class="form-control myhover" placeholder="Enter First Name" id="firstName">
+                            <input required type="firstName" class="form-control myhover inputBooking" placeholder="Enter First Name" id="firstName">
                         </div>
 
                         <div class="form-group col">
                             <label for="lastName">Last Name:</label>
-                            <input required type="lastName" class="form-control myhover" placeholder="Enter Last Name" id="lastName">
+                            <input required type="lastName" class="form-control myhover inputBooking" placeholder="Enter Last Name" id="lastName">
                         </div>
                     </div>
 
@@ -195,12 +201,12 @@ This will help you get started with your code!
                     <div style="margin-bottom: 25px;" class="row">
                         <div class="form-group col">
                             <label for="email">Email address:</label>
-                            <input required type="email" class="form-control myhover" placeholder="Enter email" id="phone">
+                            <input required type="email" class="form-control myhover inputBooking" placeholder="Enter email" id="email">
                         </div>
 
                         <div class="form-group col">
                             <label for="phone">Phone Number:</label>
-                            <input id = "#phonenumber" required type="tel" class="form-control myhover" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx" id="phone">
+                            <input id = "#phonenumber" required type="tel" class="form-control myhover inputBooking" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx" id="phone">
                             <!-- https://stackoverflow.com/questions/38268880/phone-number-validation-bootstrap3 -->
                         </div>
                     </div>
@@ -210,7 +216,7 @@ This will help you get started with your code!
                     <div>
                         <div style="margin-bottom: 10px;" class="form-group">
                             <label for="select">Practitioner:</label>
-                            <select required style="cursor: pointer;" class="form-control myhover">
+                            <select id = "selectPro" required style="cursor: pointer;" class="form-control myhover inputBooking">
                                 <option>Any</option>
                                 <option>Dr. Ricardo</option>
                                 <option>Dr. John</option>
@@ -218,11 +224,28 @@ This will help you get started with your code!
                             </select>
                         </div>
 
-                        <div style="margin-bottom: 10px;" class="form-group">
-                            <label for="dateAndTime " class="textParTopic grey_text">Appointment Date and Time:</label>
-                            <input style = "cursor: text;" required type="datetime-local" class="textPar form-control myhover">
+                        
+                        <!-- <div style="margin-bottom: 10px;" class="form-group"> -->
+                            <!-- <label for="dateAndTime " class="textParTopic grey_text">Appointment Date and Time:</label> -->
+                            <!-- <input id = "datepicker" style = "cursor: text;" required type="datetime-local" data-provide="datepicker-inline" class="textPar form-control myhover inputBooking"> -->
                             <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_datetime-local -->
+                        <!-- </div> -->
+                        
+
+                        <div style="margin-bottom: 30px;" class="form-group">
+                            <label for="dateAndTime " class="textParTopic grey_text">Appointment Date and Time:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend ">
+                                        <button type = "button" id = "toggle" class =  "input-group-text myhover2"> <img id = "calendarlogo" src="images/calendar.png"  style=""></i></button>
+                                    </div>
+                                    <input required autocomplete="off" id="datetimepicker" type="text" class="form-control  inputBooking myhover">
+                                </div>
                         </div>
+                              <!-- https://xdsoft.net/jqplugins/datetimepicker/ -->
+                        
+                           
+
+
                     </div>
 
                     <hr>
@@ -235,7 +258,7 @@ This will help you get started with your code!
                     <!-- https://www.pikpng.com/pngl/m/488-4881288_you-can-use-visa-and-mastercard-online-to.png -->
                     <div style="margin-top: 15px;" class="form-group">
                         <label for="email"> Card-Number:<img id = "visalogo" src="images/credit.png"  style="margin-left: 10px; width:30px; margin-top: 0px; padding-bottom: 5px;"></label>
-                        <input required type="tel" maxlength="19" pattern="[0-9\s]{13,19}" class="form-control myhover" placeholder="xxxx xxxx xxxx xxxx" id="card">
+                        <input required type="tel" maxlength="19" pattern="[0-9\s]{13,19}" class="form-control myhover inputBooking" placeholder="xxxx xxxx xxxx xxxx" id="card">
                     </div>
 
 
