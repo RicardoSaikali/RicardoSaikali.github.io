@@ -1,0 +1,172 @@
+body{
+    overflow-x: hidden;
+}
+td{
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+    font-family: 'Mali', cursive;
+}
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+.btn-primary{
+    font-size: 25px;
+    margin: 40px;
+    padding: 20px;
+    background-color: #0d6efd;
+}
+.bodyfont {
+    text-align: left;
+    font-family: 'Mali', cursive;
+    font-size: x-large;
+    color:#093f81
+}
+.titlefont{
+    font-family: 'Mali', cursive;
+    /* color:#093f81; */
+    color: white;
+}
+
+.subtitlefont{
+    color:#093f81;
+    font-family: 'Mali', cursive;
+}
+
+.services{
+    background-color: #093f81;
+}
+
+.accordion-button{
+    font-size: xx-large;
+    color:#093f81;
+    display:block;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.accordion-button:hover{
+    background-color: #d0f4fc;
+}
+
+.accordion {
+    text-align: center;
+    display:block;
+    width: 70%;
+}
+
+.accordion-header{
+    text-align: center;
+}
+
+#name {
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+#imagefront{
+    padding-bottom: 75px;
+    padding-top: 75px;
+}
+
+.myfooter {
+    font-size: 22px;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #093f81;
+    text-align: center;
+    font-family: 'Mali', cursive;
+    margin: 0;
+  } 
+
+  .modal-body{
+    font-family: 'Mali', cursive;
+    font-size: 1.3rem;
+    color: #093f81;
+  }
+
+  .modal-title{
+    font-family: 'Mali', cursive;
+    font-size: 2rem;
+    color: #093f81;
+  }
+
+  .nav-item {
+    padding-right: 5px;
+    right: 10px;
+    font-size: 30px;
+    font-family: 'Mali', cursive;
+    border-right: 1px solid black;
+  }
+  .nav-item:hover {
+    background-color: #093f81;
+    color: white;
+  }
+
+  .nav-link:hover{
+      color: white;
+  }
+
+  .nav-link{
+      color: #093f81;
+  }
+
+  .navbar{
+      background-color: rgba(211, 211, 211, 0.705);
+  }
+
+#navimages {
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+#whowearelogo{
+    margin-right: 15px;
+}
+
+#serviceslogo{
+    margin-right: 25px;
+
+}
+
+#practitionerslogo{
+    margin-right: 10px;
+    margin-left: 20px;;
+}
+
+#locationlogo{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.location{
+    padding-top: 40px;
+    background-color: rgba(211, 211, 211, 0.705);
+}
+
+.myhover:hover{
+    border: 1px solid #0d6efd;
+}
+
+#finalbook{
+    background-color: #0d6efd;
+    color: white;
+    font-family: 'Mali', cursive;
+    font-size: 1.25rem
+}
+
+#finalbook:hover{
+    background-color: #093f81;
+}
