@@ -1,7 +1,7 @@
-var anytime = [];
-var ricardotime = [1,2];
-var johntime = [3,4];
-var thomastime = [5,6];
+var anytime = [6,0];
+var ricardotime = [6,0,1,2];
+var johntime = [6,0,3,4];
+var thomastime = [6,0,5,3];
 let currentDayFilter;
 
 var maptime = {
@@ -35,12 +35,13 @@ $(document).ready(function(){
     //     // value:'2021-06-11',
     //     disabledWeekDays: currentDayFilter
     // });
+    datefunc();
 
     $("#datetimepicker").datetimepicker({
         // value:'2021-06-11',
         disabledWeekDays: currentDayFilter
     });
-
+    
     $('#toggle').on("click", function(){
         $('#datetimepicker').datetimepicker("show");
     });
