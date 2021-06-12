@@ -65,18 +65,19 @@ $(document).ready(function(){
         return currentDayFilter;
     };
 
-    firstname.oninvalid = function(event) {
-        event.target.setCustomValidity('Please make sure this field is written correctly and does not have any special characters other than a - or \'');
-    }
-    lastName.oninvalid = function(event) {
-        event.target.setCustomValidity('Please make sure this field is written correctly and does not have any special characters other than a - or \'');
-    }
-    firstname.oninput = function(event) {
-        event.target.setCustomValidity(' ');
-    }
-    lastName.oninput = function(event) {
-        event.target.setCustomValidity(' ');
-    }
+    // firstname.oninvalid = function(event) {
+    //     event.target.setCustomValidity('Please make sure this field is written correctly and does not have any special characters other than a - or \'');
+    // };
+
+    // lastName.oninvalid = function(event) {
+    //     event.target.setCustomValidity('Please make sure this field is written correctly and does not have any special characters other than a - or \'');
+    // };
+    // firstname.oninput = function(event) {
+    //     event.target.setCustomValidity(' ');
+    // }
+    // lastName.oninput = function(event) {
+    //     event.target.setCustomValidity(' ');
+    // }
 
 
 });
