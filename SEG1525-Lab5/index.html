@@ -188,12 +188,12 @@ This will help you get started with your code!
                     <div style="margin-bottom: 10px;" class="row">
                         <div class="form-group col">
                             <label for="firstName">First Name:</label>
-                            <input required type="firstName" class="form-control myhover inputBooking" placeholder="Enter First Name" id="firstName">
+                            <input required type="text" pattern="[A-Za-z'-. ]+" class="form-control myhover inputBooking" placeholder="Enter First Name" id="firstName" onchange="if (typeof this.reportValidity === 'function') {this.reportValidity();}"/>
                         </div>
 
                         <div class="form-group col">
                             <label for="lastName">Last Name:</label>
-                            <input required type="lastName" class="form-control myhover inputBooking" placeholder="Enter Last Name" id="lastName">
+                            <input required type="text" pattern="[A-Za-z'-. ]+" class="form-control myhover inputBooking" placeholder="Enter Last Name" id="lastName" onchange="if (typeof this.reportValidity === 'function') {this.reportValidity();}"/>
                         </div>
                     </div>
 
@@ -201,12 +201,12 @@ This will help you get started with your code!
                     <div style="margin-bottom: 25px;" class="row">
                         <div class="form-group col">
                             <label for="email">Email address:</label>
-                            <input required type="email" class="form-control myhover inputBooking" placeholder="Enter email" id="email">
+                            <input required type="email" class="form-control myhover inputBooking" placeholder="Enter email" id="email" onchange="if (typeof this.reportValidity === 'function') {this.reportValidity();}"/>
                         </div>
 
                         <div class="form-group col">
-                            <label for="phone">Phone Number:</label>
-                            <input id = "#phonenumber" required type="tel" class="form-control myhover inputBooking" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx" id="phone">
+                            <label for="phone">Phone Number: (xxx-xxx-xxxx)</label>
+                            <input id = "#phonenumber" required type="tel" class="form-control myhover inputBooking" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx" id="phone" onchange="if (typeof this.reportValidity === 'function') {this.reportValidity();}"/>
                             <!-- https://stackoverflow.com/questions/38268880/phone-number-validation-bootstrap3 -->
                         </div>
                     </div>
@@ -216,7 +216,7 @@ This will help you get started with your code!
                     <div>
                         <div style="margin-bottom: 10px;" class="form-group">
                             <label for="select">Practitioner:</label>
-                            <select id = "selectPro" required style="cursor: pointer;" class="form-control myhover inputBooking">
+                            <select id = "selectPro" style="cursor: pointer;" class="form-control myhover inputBooking">
                                 <option>Any</option>
                                 <option>Dr. Ricardo</option>
                                 <option>Dr. John</option>
@@ -238,7 +238,7 @@ This will help you get started with your code!
                                     <div class="input-group-prepend ">
                                         <button type = "button" id = "toggle" class =  "input-group-text myhover2"> <img id = "calendarlogo" src="images/calendar.png"  style=""></i></button>
                                     </div>
-                                    <input required autocomplete="off" id="datetimepicker" type="text" class="form-control  inputBooking myhover">
+                                    <input required autocomplete="off" id="datetimepicker" type="text" class="form-control  inputBooking myhover" >
                                 </div>
                         </div>
                               <!-- https://xdsoft.net/jqplugins/datetimepicker/ -->
@@ -257,8 +257,8 @@ This will help you get started with your code!
 
                     <!-- https://www.pikpng.com/pngl/m/488-4881288_you-can-use-visa-and-mastercard-online-to.png -->
                     <div style="margin-top: 15px;" class="form-group">
-                        <label for="email"> Card-Number:<img id = "visalogo" src="images/credit.png"  style="margin-left: 10px; width:30px; margin-top: 0px; padding-bottom: 5px;"></label>
-                        <input required type="tel" maxlength="19" pattern="[0-9\s]{13,19}" class="form-control myhover inputBooking" placeholder="xxxx xxxx xxxx xxxx" id="card">
+                        <label for="email"> Card-Number:<img id = "visalogo" src="images/credit.png"  style="margin-left: 10px; width:30px; margin-top: 0px; padding-bottom: 5px;"> (xxxx xxxx xxxx xxxx)</label>
+                        <input required type="tel" maxlength="19" pattern="[0-9\s]{13,19}" class="form-control myhover inputBooking" placeholder="xxxx xxxx xxxx xxxx" id="card" onchange="if (typeof this.reportValidity === 'function') {this.reportValidity();}">
                     </div>
 
 

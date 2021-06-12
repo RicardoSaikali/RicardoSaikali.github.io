@@ -11,10 +11,13 @@ var maptime = {
     "Dr. Thomas": thomastime
 };
 
+
+
+
 $(document).ready(function(){
     var myform = $("#bookform");
     var firstname = document.querySelector("#firstName");
-    var lastName = $("#lastName");
+    var lastName = document.querySelector("#lastName");
     var email = $("#email");
     var phone = $("#phonenumber");
     var selectPro = $("#selectPro");
@@ -29,16 +32,9 @@ $(document).ready(function(){
         $("#modalTitle").text( serviceName );
     });
 
-
-    // $('#datetimepicker').datetimepicker();
-    // $("#datetimepicker").datetimepicker({
-    //     // value:'2021-06-11',
-    //     disabledWeekDays: currentDayFilter
-    // });
     datefunc();
 
     $("#datetimepicker").datetimepicker({
-        // value:'2021-06-11',
         disabledWeekDays: currentDayFilter
     });
     
@@ -60,19 +56,27 @@ $(document).ready(function(){
         });
         $('#toggle').on("click", function(){
             $('#datetimepicker').datetimepicker("show");
-        });
-        // $('#datetimepicker').datetimepicker("show");      
+        });  
     });
 
     
-    
-    
-
     function datefunc(){
         currentDayFilter = maptime[ selectPro.children("option:selected").text()];
         return currentDayFilter;
-    }   
+    };
 
+    firstname.oninvalid = function(event) {
+        event.target.setCustomValidity('Please make sure this field is written correctly and does not have any special characters other than a - or \'');
+    }
+    lastName.oninvalid = function(event) {
+        event.target.setCustomValidity('Please make sure this field is written correctly and does not have any special characters other than a - or \'');
+    }
+    firstname.oninput = function(event) {
+        event.target.setCustomValidity(' ');
+    }
+    lastName.oninput = function(event) {
+        event.target.setCustomValidity(' ');
+    }
 
 
 });
