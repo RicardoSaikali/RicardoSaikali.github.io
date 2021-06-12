@@ -2,7 +2,7 @@ var anytime = [];
 var ricardotime = [1,2];
 var johntime = [3,4];
 var thomastime = [5,6];
-var currentDayFilter=[];
+let currentDayFilter;
 
 var maptime = {
     "Any": anytime,
@@ -31,30 +31,45 @@ $(document).ready(function(){
 
 
     // $('#datetimepicker').datetimepicker();
+    // $("#datetimepicker").datetimepicker({
+    //     // value:'2021-06-11',
+    //     disabledWeekDays: currentDayFilter
+    // });
+
     $("#datetimepicker").datetimepicker({
         // value:'2021-06-11',
         disabledWeekDays: currentDayFilter
     });
 
     $('#toggle').on("click", function(){
-        $('#datetimepicker').datetimepicker("toggle");
+        $('#datetimepicker').datetimepicker("show");
     });
 
     $("#selectPro").on("change", function(){
-        // $('#datetimepicker').datetimepicker();
+        
         $('#datetimepicker').datetimepicker("destroy");
         datefunc();
-        
-        $('#datetimepicker').datetimepicker("testing");      
+        var container = document.getElementById("holdCalendar");
+        var content = container.innerHTML;
+        container.innerHTML= " "; 
+        container.innerHTML= content; 
+        $("#datetimepicker").datetimepicker({
+            // value:'2021-06-11',
+            disabledWeekDays: currentDayFilter
+        });
+        $('#toggle').on("click", function(){
+            $('#datetimepicker').datetimepicker("show");
+        });
+        // $('#datetimepicker').datetimepicker("show");      
     });
 
-
+    
+    
+    
 
     function datefunc(){
-        let days = [];
-        days.push(maptime[ selectPro.children("option:selected").text()]);
-        currentDayFilter = days;
-        return days;
+        currentDayFilter = maptime[ selectPro.children("option:selected").text()];
+        return currentDayFilter;
     }   
 
 
