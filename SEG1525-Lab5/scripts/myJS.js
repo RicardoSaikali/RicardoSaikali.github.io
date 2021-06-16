@@ -5,10 +5,10 @@ var thomastime = [6,0,5,3];
 let currentDayFilter;
 
 var maptime = {
-    "Any": anytime,
-    "Dr. Ricardo": ricardotime,
-    "Dr. John": johntime,
-    "Dr. Thomas": thomastime
+    "Any - Weekdays Only": anytime,
+    "Dr. Ricardo - Wed, Thu, Fri Only": ricardotime,
+    "Dr. John - Mon, Tue, Fri Only": johntime,
+    "Dr. Thomas - Mon, Tue, Thu Only": thomastime
 };
 
 
