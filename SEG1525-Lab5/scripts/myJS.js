@@ -35,6 +35,7 @@ $(document).ready(function(){
     datefunc();
 
     $("#datetimepicker").datetimepicker({
+        minDate:0,
         disabledWeekDays: currentDayFilter
     });
     
@@ -52,6 +53,7 @@ $(document).ready(function(){
         container.innerHTML= content; 
         $("#datetimepicker").datetimepicker({
             // value:'2021-06-11',
+            minDate:0,
             disabledWeekDays: currentDayFilter
         });
         $('#toggle').on("click", function(){
