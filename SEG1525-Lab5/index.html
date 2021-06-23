@@ -217,10 +217,10 @@ This will help you get started with your code!
                         <div style="margin-bottom: 10px;" class="form-group">
                             <label for="select">Practitioner:</label>
                             <select id = "selectPro" style="cursor: pointer;" class="form-control myhover inputBooking">
-                                <option>Any - Weekdays Only</option>
-                                <option>Dr. Ricardo - Wed, Thu, Fri Only</option>
-                                <option>Dr. John - Mon, Tue, Fri Only</option>
-                                <option>Dr. Thomas - Mon, Tue, Thu Only</option>
+                                <option value="Any doctor">Any - Weekdays Only</option>
+                                <option value="Dr. Ricardo">Dr. Ricardo - Wed, Thu, Fri Only</option>
+                                <option value="Dr. John">Dr. John - Mon, Tue, Fri Only</option>
+                                <option value="Dr. Thomas">Dr. Thomas - Mon, Tue, Thu Only</option>
                             </select>
                         </div>
 
@@ -266,7 +266,7 @@ This will help you get started with your code!
 
                 <div class="modal-footer">
                     <button style="font-family: 'Mali', cursive; font-size: 1.25rem" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button id = "finalbook" style = " " type="submit" class="btn ">Book Appointment</button>
+                    <button id = "finalbook" style = " " value="Submit" type="submit" class="btn ">Book Appointment</button>
                 </div>
 
 
