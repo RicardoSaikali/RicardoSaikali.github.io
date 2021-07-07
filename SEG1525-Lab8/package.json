@@ -1,7 +1,7 @@
 {
   "name": "lab8",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://ricardosaikali.github.io/SEG1525-Lab8",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -14,7 +14,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
